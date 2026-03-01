@@ -1,7 +1,77 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <h1>Hello World!</h1>
-    <p>My first site on GitHub Pages.</p>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | Cloud & Systems</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">DevPortfolio</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li class="dropdown">
+        <a href="#services" class="dropbtn">Services ▼</a>
+        <div class="dropdown-content">
+          <a href="#deployment">Deployment</a>
+          <a href="#cloud">Cloud Computing</a>
+          <a href="#sys-design">System Design</a>
+        </div>
+      </li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <h1>High-Scale Infrastructure & Design</h1>
+    <p>Specializing in Cloud Architecture and Seamless Deployments.</p>
+    <button id="cta-btn">View My Work</button>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a systems engineer focused on building resilient, scalable applications.</p>
+  </section>
+
+  <section id="services">
+    <h2>Expertise</h2>
+    <div class="service-grid">
+      <div id="deployment" class="card">
+        <h3>Deployment</h3>
+        <p>CI/CD pipelines, Docker, and Kubernetes orchestration.</p>
+      </div>
+      <div id="cloud" class="card">
+        <h3>Cloud Computing</h3>
+        <p>AWS/Azure solutions focused on cost-optimization and security.</p>
+      </div>
+      <div id="sys-design" class="card">
+        <h3>System Design</h3>
+        <p>Architecting distributed systems for high availability.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
+
